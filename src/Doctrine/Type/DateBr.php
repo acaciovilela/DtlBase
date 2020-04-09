@@ -29,7 +29,7 @@ class DateBr extends Type {
             $value = new \DateTime($value);
         }
         
-//        \Zend\Debug\Debug::dump($value);exit;
+//        \Laminas\Debug\Debug::dump($value);exit;
         
         return (!empty($value)) ? $value->format($platform->getDateFormatString()) : null;
     }
